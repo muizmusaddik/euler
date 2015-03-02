@@ -24,15 +24,13 @@ func main() {
 			for j := 999; j > 899; j-- {
 				if i % j == 0 {
 					tmp := i / j
-					for k := 999; k > 899; k-- {
+					for k := j; k > 899; k-- {
 						if tmp % k == 0 {
 							fmt.Println("Largest palindrome number made from the product of 2 3-digit number is: ", i)
 							found = true
 							break
 						}
 					}
-					//found = true
-					//break
 				}
 				if found {
 					break
